@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+    <title>BOOKINK FORM</title>  
+    <link rel = "stylesheet" type = "text/css" href = "style.css">   
+</head>
+<style>
+body.vik {
+  background-image: url("glass.jpg");
+  border: 12px rgb(16, 114, 16) solid;
+  padding: 2px 0px;
+  width: 362px;
+  height: 588px;
+  
+}
+.body.frms {
+  background-color: rgb(167, 113, 13);
+}
+      input{
+        border-radius: 5px;
+        border-color: #286b08;
+        margin-left: 0px;
+      }
+      select{
+        border-radius: 5px;
+        border-color: greenyellow;
+      }
+      label{
+        text-transform: uppercase;
+        margin-left: 10px;
+        
+      }
+      .center{
+        display: inline-flex;
+            margin-left: 70px;
+            color: #286b08;
+            
+      }
+      .jaj {
+        background-color:rgb(167, 113, 13);
+        height: 482px;
+        width: 362px;
+      }
+      nav ul li a {
+        color: wheat;
+       height:25px;
+      }
+    </style><body>
+
+
+<header style="background-color: #286b08; margin-top:0px;">
+  <nav  style="color: wheat; ">
+    <ul>
+      <li><a href="HOME.html">Home</a></li>
+      <li><a href="ABOUNT ME.html">About</a></li>
+      <li><a href="SERVICES.html">Services</a></li>
+      <li><a href="CONTACT ME.html">Contact me</a></li>
+    </ul>
+  </nav>
+ </header>
+
+<body class="vik">  
+    <section class="jaj">
+  <h2><center>BOOKING FORM</center><hr></h2><br>
+   <div id="frms">
+  <form name="f1" action ="customer.php" method = "POST">
+  
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" value="" placeholder="Enter your First name" required><br><br><br>
+
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" value="" placeholder="Enter your Last name" required><br><br><br>
+
+  <label for="phone">Contact:</label>
+  <input type="tel" id="phone" name="phone" placeholder="0766366463" pattern="[0-9]{10}"required><br><br><br>
+ 
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email" value=""placeholder="Type your email address"required><br><br><br>
+
+  <label for="service">SERVICE:</label>
+  <select name="service" id="service">
+    <option value="Website design">Website design</option>
+    <option value="graphic design">graphic design</option>
+    <option value="Website update">Website update</option>
+    <option value="graphic planning">graphic planning </option>
+  </select><br><br><br>
+  
+  <label for="Date">Date of booking:</label>
+  <input type="date" id="date" name="date"required><br><br><br>
+  
+<div class="center">
+  <center>
+  <input type = "submit" id = "btn" value = "Apply Now" />
+  <input type = "reset" id = "btn" value = "Cancel" />
+</center>
+</section>
+  </div>
+</form> 
+</div>
+     </div><br>
+<center>
+     <section class="bub" style="height: 50px;padding-top: 30px;background-color: #286b08;">
+      <a href="CONTACT ME.html" class="bts"><button style="background-color:
+       darkgreen;color: whitesmoke;margin-left: 10px;">back</button></a>
+ 
+ <a href="LOGIN.html" class="bts"><button style="background-color:
+   darkgreen;color: whitesmoke;">Next</button></a>
+  </section></center><hr><br> 
+  
+
+    <section  style="background-color:rgb(167, 113, 13);">
+      <footer>
+     <div class="met">
+       <p style="color: green; font-size: medium; font-weight: 700; margin-left: 8px;">&copy; 2024 My Website. All rights reserved.
+         <a href="https://Web.whatsapp.com/0759086397" style="margin-left: 7px;"><img src="whatsapp.png" alt="Chat with me on Watsapp"
+         width="25" height="25">    </a>
+ 
+         <a href="mailto:lawrcencelugendo286@gmail.com"style="margin-left: 5px;">
+         <img src="pk5.png" alt=" click here to with me on email" width="35" height="19"></a> 
+  </p>
+  
+   </footer>
+   </section> 
+</body>     
+</html>  

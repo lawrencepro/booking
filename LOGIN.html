@@ -1,0 +1,128 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body,html{
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(rgb(66, 61, 61),rgb(109, 109, 8),rgb(92, 2, 2),
+  rgb(22, 20, 20),rgb(109, 109, 8),rgb(92, 2, 2));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img.img {
+  width: 50%;
+  border-radius: 30%;
+}
+.bg-img {
+  /* The image used */
+  background-image: url("img.jpg");
+
+  min-height: 650px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+
+  margin-top:0px;
+  max-width: 320px;
+  padding: 12px;
+  background-image: linear-gradient(to bottom right,rgb(122, 5, 5),rgb(189, 125, 7));
+  border: 16px solid #286b08;
+  border-radius: 30px;
+  height: 88%;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #dfdbdb;
+  border-radius: 18px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #cecaca;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 48%;
+  opacity: 0.9;
+  border-radius: 28px;
+}
+.bty {background: rgb(3, 48, 3);
+            color: wheat;
+            padding: 5px 12px;
+            margin-left: 8px;
+            border-radius: 7px;
+            font-size: 25px;}
+
+.btn:hover {
+  opacity: 1;
+}
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 7px 12px;
+  background-color: #f44336;
+  border-radius: 30px;
+}
+ 
+ 
+
+</style>
+</head> 
+<body>
+
+<h1 style="color:rgb(187, 128, 18);"><center>Login Page</center></h1><hr>
+<div class="bg-img">
+<center> <form action="authentication.php" class="container" onsubmit = "return validation()" method = "POST">
+  <img src="brand.jpg" alt="img" height="28%" width="100%">
+    <h1 style="text-align: center; color: rgb(212, 142, 11);">Login</h1><hr>
+
+    <label for="user"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="user" id="user" required>
+
+    <label for="pass"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pass" id="password" required>
+
+   <center> <button class="btn">Login</button>
+   <a href="INDEX.html" style="color:white;"> <button class="btn">Logout</button></a><br></center><br>
+    <button type="button" class="cancelbtn" value="Cancel">Cancel</button>
+    <span class="psw">Forgot <a href="reset.php">password?</a></span>
+  </div>
+  </form></center>
+  <a href="welcome.html"><button class="bty">Back</button></a><br>
+</div>
+</body>
+</html>
